@@ -1,13 +1,12 @@
-'use script';
-
-var number = 5;
-var obj = {};
-let persone = {
-  name: "Tom",
-  age: "20",
-  isMarried: false
+let cat = {
+  hp: 10,
+  name: 'cat'
 };
-var arr = ["orange.jpg","apple.inc"];
 
-let incr = 10,
-    decr = 10;
+let john = {
+  name: 'John'
+};
+
+john.__proto__ = cat;
+console.log(john);
+console.log(john.hp);
